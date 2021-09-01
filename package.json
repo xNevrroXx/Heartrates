@@ -3,7 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xNevrroXx/Heartrates.git"
+  },
+  "author": "Vladimir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xNevrroXx/Heartrates/issues"
+  },
+  "homepage": "https://github.com/xNevrroXx/Heartrates#readme",
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
@@ -11,11 +23,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.38.2"
+  }
 }
