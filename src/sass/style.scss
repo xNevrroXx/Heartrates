@@ -10,6 +10,10 @@
     font-weight: 300;
 }
 
+a {
+    cursor: pointer;
+}
+
 .container {
     max-width: 950px;
     margin: 0 auto;
@@ -18,3 +22,5 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/button';
+
+@import 'blocks/adventages';
