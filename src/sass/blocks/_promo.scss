@@ -1,64 +1,65 @@
 .promo {
+    display: block;
     min-height: 650px;
     padding-top: 21px;
     padding-bottom: 93px;
-    background: url(../../img/bg/bg-promo.jpg) center center / cover no-repeat;
+    background: url(../img/bg/bg-promo.jpg) center center / cover no-repeat;
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
         padding-top: 91px;
-        h1 {
-            color: #ffffff;
-            font-size: 42px;
-            font-weight: 700;
-            text-align: right;
-            text-transform: uppercase;
-            margin-bottom: 17px;
-        }
-        h2 {
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: 500;
-            text-align: right;
-            text-transform: uppercase;
-            margin-bottom: 70px;
-        }
-        .promo__icons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 424px;
-            .promo__icon {
-                max-width: 106px;
-                margin-bottom: 68px;
-                img {
-                    max-width: 45px;
-                    max-height: 45px;
-                    display: block;
-                    margin: 0 auto;
-                    margin-bottom: 20px;
-                }
-                .promo__description-icon {
-                    color: #ffffff;
-                    font-size: 14px;
-                    font-weight: 300;
-                    text-align: center;
-                }
-            }
-        }
-        .promo__link-catalog {
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: right;
-            a {
-                text-decoration: none;
+    }
+    &__header {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 17px;
+    }
+    &__subheader {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 424px;
+        margin-bottom: 68px;
+    }
+    &__block {
+        max-width: 106px;
+    }
+    &__icon {
+        max-width: 45px;
+        max-height: 45px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &__description-icon {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__link-catalog {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: right;
+        a {
+            text-decoration: none;
+            text-decoration: underline;
+            &:hover {
                 text-decoration: underline;
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
     }

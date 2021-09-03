@@ -3,28 +3,27 @@
     padding-bottom: 78px;
     min-height: 472px;
     background-color: #f6f6f6;
-    h1 {
+    &__header {
         text-transform: uppercase;
         color: #0d0d0d;
         font-size: 30px;
         font-weight: 700;
         text-align: center;
+        margin-bottom: 65px;
     }
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
     &__theme {
         width: 247px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: space-between;
+        align-items: center;
     }
     &__icon {
-        display: block;
-        margin: 0 auto;
         width: 70px;
         height: 70px;
         margin-bottom: 38px;
@@ -42,7 +41,7 @@
         font-weight: 300;
         text-align: center;
     }
-    .adventages__description a {
+    &__description a {
         color: $main_color;
         text-decoration: underline;
         text-transform: uppercase;
