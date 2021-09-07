@@ -60,7 +60,7 @@
 
     <div class="adventages">
         <div class="container">
-            <h2 class="adventages__header">Наши преисущества</h2>
+            <h2 class="title">Наши преимущества</h2>
             <div class="adventages__wrapper">
                 <div class="adventages__theme">
                     <img src="icons/adventages/cup.png" alt="cup achieve!" class="adventages__icon">
@@ -85,13 +85,28 @@
         </div>
     </div>
 
-<!--     <div class="consultation">
+    <div class="consultation">
         <div class="container">
-            <h2 class="consultation__get-it">Получите бесплатную консультацию
+            <h2 class="title title_left">Получите бесплатную консультацию<br>
                 по подбору пульсометра </h2>
-            <div class="consultation__header-form">Просто заполните форму заявки 
+            <div class="consultation__description">Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут</div>
+            <form id="myForm" class="feed-form" action="" enctype="text/plain" method="POST">
+                <input required placeholder="Ваше имя" type="text">
+                <input required placeholder="Ваш телефон" type="tel">
+                <input required placeholder="Ваш E-mail" type="email">
+
+                <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
         </div>
-    </div> -->
+    </div>
+
+    
+    <!-- Скрипт для того, чтобы скрыть (почту/другой портал), КУДА отправляютя данные с формы.-->
+    <script>
+        var first = "govorov2001gv", second = "gmail";
+        myForm.action = "mailto:" + first + "@" + second + ".com";
+    </script>
 </body>
 </html>

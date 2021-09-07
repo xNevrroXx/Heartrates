@@ -1,0 +1,24 @@
+.feed-form {
+    width: 300px;
+    input {
+        width: 100%;
+        display: block;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: none;
+        //for text
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        &:nth-of-type(-n+2) {
+            margin-bottom: 15px;
+        }
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }
+}
