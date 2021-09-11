@@ -1,0 +1,54 @@
+.carousel {
+    padding-top: 81px;
+    padding-bottom: 82px;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+.carousel__prev, .carousel__next {
+    position: absolute;
+    border: none;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+        width: 31px;
+        height: 50px;
+    }
+}
+.carousel__prev {
+    left: -66px;
+}
+
+.carousel__next {
+    right: -66px;
+}
+
+.tns-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 120px;
+    height:20px;
+    button {
+        border: none;
+        width: 20px;
+        height: 20px;
+        background-image: url('../icons/circle.svg');
+        transition: 0.5s all;
+    }
+    &-active { //button active
+        transform: translateY(-8px) scale(1.08);
+    }
+}
+
+.tns-item {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}

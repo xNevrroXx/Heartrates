@@ -7,10 +7,12 @@
     <title>Runsmart</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <div class="header">
                 <a class="header__logo">
@@ -56,9 +58,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="adventages">
+    <section class="adventages">
         <div class="container">
             <h2 class="title">Наши преимущества</h2>
             <div class="adventages__wrapper">
@@ -83,9 +85,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">Получите бесплатную консультацию<br>
                 по подбору пульсометра </h2>
@@ -100,13 +102,35 @@
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
-    </div>
+    </section>
 
-    
-    <!-- Скрипт для того, чтобы скрыть (почту/другой портал), КУДА отправляютя данные с формы.-->
-    <script>
-        var first = "govorov2001gv", second = "gmail";
-        myForm.action = "mailto:" + first + "@" + second + ".com";
-    </script>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/main_carousel/slide_1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/main_carousel/slide_2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/main_carousel/slide_3.jpg" alt="slide">
+                </div>
+            </div>
+            <button type="button" class="carousel__prev less-992-hidden"><img src="icons/left-solid.svg"></button>
+            <button type="button" class="carousel__next less-992-hidden"><img src="icons/right-solid.svg"></button>
+
+        </div>
+    </section>
+
+<!--     слайдер на слике(slick - jquery use)
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script> -->
+
+
+    <!-- tiny-slider(only js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

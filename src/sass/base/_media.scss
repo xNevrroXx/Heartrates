@@ -1,4 +1,8 @@
 @media (max-width: 991px) {
+    .less-992-hidden {
+        display: none;
+    }
+
     .container {
         width: 90%;
     }
@@ -32,11 +36,11 @@
         height: 48px;
     }
 
+    .title {
+        font-size: 29px;
+    }
     .adventages {
         min-height: 460px;
-        &__header {
-            font-size: 29px;
-        }
         &__theme {
             align-items: center;
             width: 30%;
@@ -47,6 +51,14 @@
         &__subtitle {
             font-size: 17px;
             margin-bottom: 21px;
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .tns-item {
+        img {
+            width: 100%;
         }
     }
 }
@@ -69,12 +81,12 @@
         }
     }
 
+    .title {
+        margin-bottom: 45px;
+    }
     .adventages {
         padding-top: 60px;
         min-height: 455px;
-        &__header {
-            margin-bottom: 45px;
-        }
         &__icon {
             margin-bottom: 25px;
         }
@@ -110,10 +122,10 @@
         }
     }
 
+    .title {
+        font-size: 26px;
+    }
     .adventages {
-        &__header {
-            font-size: 26px;
-        }
         &__wrapper {
             flex-direction: column;
             justify-content: center;
@@ -185,11 +197,11 @@
         font-size: 15px;
     }
 
+    .title {
+        font-size: 23px;
+        margin-bottom: 38px;
+    }
     .adventages {
-        &__header {
-            font-size: 23px;
-            margin-bottom: 38px;
-        }
         &__theme {
             width: 268px;
         }
