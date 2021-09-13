@@ -1,0 +1,120 @@
+.catalog-item {
+    border: 2px solid #e8e8e8;
+    padding: 20px 20px 26px 20px;
+    width: 300px;
+    min-height: 440px;
+    overflow: hidden;
+    &__image {
+        display: block;
+        margin: 0 auto;
+        max-width: 140px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__description {
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    &__link {
+        color: #c70101;
+        font-size: 14px;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover {
+            color: #c70101;
+        }
+    }
+    hr {
+        margin-top: 19px;
+        background-color: #e8e8e8;
+        margin-bottom: 21px;
+        opacity: 0.9;
+    }
+    &__buy-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__old-price {
+        color: #555555;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        text-decoration: line-through;
+        margin-bottom: 6px;
+    }
+    &__actual-price {
+        color: #050505;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+    }
+    &__wrapper {
+        display: flex;
+        width: calc(200% + 40px);
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-right: 0px;
+        transform: translateX(-100%);
+        transition: 0.5s all;
+        overflow: hidden;
+        &_active {
+            transform: translateX(0%);
+            margin-right: 20px;
+        }
+    }
+    &__full-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        padding-right: 20px;
+        margin-left: 20px;
+        transform: translateX(0%);
+        transition: 0.5s all;
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0px;
+        }
+    }
+    &__list {
+        position: relative;
+        display: block;
+        list-style-type: none;
+        padding-left: 19px;
+        li {
+            position: relative;
+            color: #555555;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 20px;
+            &:before {
+                position: absolute;
+                left: -14px;
+                top: 7px;
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: $main-color;
+            }
+        }
+    }
+}

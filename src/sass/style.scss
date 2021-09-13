@@ -1,7 +1,11 @@
+/* //////////////////----Bem methodology----////////////////// */
+
+/* reusable variables */
 @import 'base/variables';
 @import 'base/mixins';
 
 
+/* reusable blocks */
 @import 'blocks/titles';
 @import 'blocks/header';
 @import 'blocks/button';
@@ -23,12 +27,13 @@ a {
     margin: 0 auto;
 }
 
+/* parts of site */
 @import 'blocks/promo';
 @import 'blocks/adventages';
 @import 'blocks/consultation';
+@import 'blocks/catalog';
+@import 'blocks/catalog-item';
 
 
-
-
-
+/* responsive file */
 @import 'base/media';
