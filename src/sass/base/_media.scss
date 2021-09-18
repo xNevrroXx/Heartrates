@@ -68,9 +68,23 @@
             font-size: 19px;
         }
     }
+
+    .reviews {
+        &__photo {
+            margin-right: 30px;
+        }
+    }
 }
 
 @media (max-width: 679px) {
+    .divider {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        width: 940px;
+        height: 1px;
+        background-color: #f6f6f6;
+    }
     .less-680-hidden {
         display: none;
     }
@@ -130,6 +144,19 @@
         }
         &__description {
             margin-bottom: 0;
+        }
+    }
+
+    .reviews {
+        &__wrapper-review {
+            flex-direction: column;
+        }
+        &__photo {
+            margin-right: 0;
+        }
+        &__divider {
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
     }
 }
@@ -199,6 +226,12 @@
     .catalog-item {
         width: 300px;
     }
+
+    .reviews {
+        &__comment {
+            font-size: 15px;
+        }
+    }
 }
 
 @media (max-width: 494px) {
@@ -264,6 +297,21 @@
     .button_buy-item {
         width: 125px;
         height: 39px;
+    }
+
+    .reviews {
+        &__photo {
+            margin-bottom: 20px;
+        }
+        &__full-name {
+            font-size: 17px;
+        }
+        &__amount-marathons {
+            font-size: 13px;
+        }
+        &__comment {
+            font-size: 13px;
+        }
     }
 }
 
