@@ -1,5 +1,5 @@
 .catalog {
-    padding-bottom: 103px;
+    padding-bottom: 83px;
     &__tabs {
         list-style-type: none;
         display: flex;
@@ -39,7 +39,7 @@
     &__content {
         display: none;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: wrap;
         &_active {
             display: flex;
