@@ -47,6 +47,11 @@
             margin-bottom: 0;
         }
     }
+    label.error {
+        display: block;
+        text-align: center;
+        border: none;
+    }
 }
 
 #consultation, #order, #thanks {
