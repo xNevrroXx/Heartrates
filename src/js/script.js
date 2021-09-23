@@ -1,9 +1,9 @@
 
 /* Скрипт для того, чтобы скрыть (почту/другой портал),
 КУДА отправляютя данные с формы. */
-var gmailFirst = "govorov2001gv", gmailSecond = "gmail";
+/* var gmailFirst = "govorov2001gv", gmailSecond = "gmail";
 consultationForm.action = "mailto:" + gmailFirst + "@" + gmailSecond + ".com";
-
+ */
 
 /* 
 $(document).ready(function(){
@@ -132,4 +132,20 @@ $(document).ready(function() {
 			}
   		});
  	}
+
+	 /* backend на php для отправки писем с форм. */
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+
+			$(".overlay, #thanks").fadeIn(),
+			$('form').trigger('reset');
+		});
+		return false; 
+	}); 
 });
